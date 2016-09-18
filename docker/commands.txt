@@ -1,0 +1,14 @@
+docker build -t petervanco/payara-autostart:latest .
+docker run -dit --name payara-1 petervanco/payara-autostart:latest
+docker run -dP --name payara-1 petervanco/payara-autostart:latest
+
+-P	na exposnutie vsetkych definovanych portov
+-d	background
+-it	alokovanie consoly
+
+# EXPOSE 4848
+# EXPOSE 8009
+# EXPOSE 8080
+# EXPOSE 8181
+# CMD ["/bin/bash", "./bin/asadmin", "start-domain", "payaradomain"]
+VOLUME /opt/payara41/glassfish/domains/payaradomain

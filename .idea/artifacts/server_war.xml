@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="server:war">
+    <output-path>$PROJECT_DIR$/server/target</output-path>
+    <root id="archive" name="jms-server-1.0.war">
+      <element id="artifact" artifact-name="server:war exploded" />
+    </root>
+  </artifact>
+</component>
